@@ -1,0 +1,176 @@
+.card-text {
+  color: #ffffff;
+}
+body {
+  background:#0b1d2a;
+  font-family: "Lucida Console", Monaco, monospace;
+  
+  color: #ffffff;
+}
+
+#links {
+  color: #ffffff;
+  margin-left: 4vh;
+}
+#links :hover {
+  color: #ffffff;
+}
+.navegar {
+  justify-content: flex-end;
+  align-items: center;
+  width: 40vh;
+  height: auto;
+}
+
+.bloco{
+  background-size: cover;
+  background-position-x: center;
+  height: 100vh;
+}
+
+.secao1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh;
+}
+#secao1 {
+  font-family: 'Monomaniac One', sans-serif;
+}
+.secao2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3vh;
+  margin-top: 3vh;
+}
+#quemsoueu {
+  border-color: transparent;
+}
+.secao3 {
+
+  margin-left: 3vh;
+  margin-top: 3vh;
+}
+
+.secao4 {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secao5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.botao1 {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 0vh;
+  border-color: #ffffff;
+}
+.custom-toggle-icon {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 4px;
+}
+#imgpare {
+  width: 35vh;
+}
+.custom-toggle-icon::before,
+.custom-toggle-icon::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.custom-toggle-icon::before {
+  transform: translateY(-6px);
+}
+
+.custom-toggle-icon::after {
+  transform: translateY(4px);
+}
+.foter {
+  padding-top: 15vh;
+}
+#footer-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+#up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+#botoes {
+  transition: all 0.3s ease;
+}
+#botoes:hover {
+  transform: translateY(-5px);
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
