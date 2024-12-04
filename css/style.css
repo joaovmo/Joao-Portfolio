@@ -4,8 +4,8 @@
 }
 
 body {
-  background: rgb(2, 0, 36);
-  background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(5, 4, 27) 72%, rgb(31, 4, 129) 100%);
+  background: rgb(39, 61, 101);
+  background: radial-gradient(circle, rgb(39, 61, 101) 0%, rgb(10, 10, 48) 100%);
   font-family: "Lucida Console", Monaco, monospace;
   color: #ffffff;
 }
@@ -227,15 +227,60 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: orange;
+    border-color: rgb(255, 255, 255);
   }
 }
+body.dark-mode {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(202, 179, 214) 40%, rgb(148, 187, 233) 100%);
+  color: black;
+}
+
+body.dark-mode h2 {
+  color: black; /* Define a cor dos títulos h1 */
+}
+
+body.dark-mode button {
+  color: rgb(0, 0, 0); /* Texto branco nos botões para contraste */
+  border: 1px solid black; /* Define a borda dos botões como preta */
+}
+
+body.dark-mode * {
+  border-color: black; /* Define a cor das bordas para todos os elementos */
+}
+
+#moon {
+  width: 10vh;
+  color: white;
+  margin-left: 1vh;
+  gap: 5vh;
+}
+
+#sun {
+  width: 4vh;
+}
+
 @media (max-width: 991px) {
   #links {
     color: #ffffff;
     margin-left: 0vh;
     margin-right: 0;
     margin-bottom: 3vh;
+  }
+}
+/* Certifique-se de usar media queries para telas menores */
+@media screen and (max-width: 768px) {
+  #link {
+    font-size: 14px; /* Tamanho da fonte menor */
+    word-wrap: break-word; /* Quebra de palavras longas */
+    white-space: normal; /* Permite que o texto se ajuste à linha */
+  }
+  .secao3 {
+    padding: 10px; /* Espaçamento reduzido */
+  }
+  #link a {
+    display: inline-block; /* Evita que o link estenda a largura da tela */
+    word-wrap: break-word; /* Quebra de palavras */
   }
 }
 

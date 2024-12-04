@@ -2,8 +2,8 @@
   color: #ffffff;
 }
 body {
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(5,4,27,1) 72%, rgba(31,4,129,1) 100%);
+  background: rgb(39,61,101);
+  background: radial-gradient(circle, rgba(39,61,101,1) 0%, rgba(10,10,48,1) 100%);
   font-family: "Lucida Console", Monaco, monospace;
   color: #ffffff;
 }
@@ -199,5 +199,38 @@ body {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: rgb(255, 255, 255); }
 }
+
+
+body.dark-mode {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(202, 179, 214, 1) 40%, rgba(148, 187, 233, 1) 100%);
+  color: black;
+}
+
+body.dark-mode h2 {
+  color: black; /* Define a cor dos títulos h1 */
+}
+
+body.dark-mode button {
+  color: rgb(0, 0, 0);             /* Texto branco nos botões para contraste */
+  border: 1px solid black;  /* Define a borda dos botões como preta */
+}
+
+body.dark-mode * {
+  border-color: black; /* Define a cor das bordas para todos os elementos */
+}
+
+
+#moon{
+  width: 10vh;
+  color: white;
+  margin-left: 1vh;
+  gap: 5vh;
+}
+
+#sun{
+  width: 4vh;
+}
+

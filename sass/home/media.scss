@@ -6,3 +6,22 @@
     margin-bottom: 3vh;
   }
 }
+
+
+/* Certifique-se de usar media queries para telas menores */
+@media screen and (max-width: 768px) {
+  #link {
+    font-size: 14px;  /* Tamanho da fonte menor */
+    word-wrap: break-word;  /* Quebra de palavras longas */
+    white-space: normal;  /* Permite que o texto se ajuste à linha */
+  }
+
+  .secao3 {
+    padding: 10px;  /* Espaçamento reduzido */
+  }
+
+  #link a {
+    display: inline-block;  /* Evita que o link estenda a largura da tela */
+    word-wrap: break-word;  /* Quebra de palavras */
+  }
+}
