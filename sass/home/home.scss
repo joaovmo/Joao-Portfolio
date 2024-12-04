@@ -2,9 +2,9 @@
   color: #ffffff;
 }
 body {
-  background:#0b1d2a;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(5,4,27,1) 72%, rgba(31,4,129,1) 100%);
   font-family: "Lucida Console", Monaco, monospace;
-  
   color: #ffffff;
 }
 
@@ -26,7 +26,10 @@ body {
   background-size: cover;
   background-position-x: center;
   height: 100vh;
+  border-radius: 4vh;
+  padding-top: 3vh;
 }
+
 
 .secao1 {
   display: flex;
@@ -43,12 +46,13 @@ body {
   align-items: center;
   margin-left: 3vh;
   margin-top: 3vh;
+  
 }
 #quemsoueu {
   border-color: transparent;
 }
 .secao3 {
-
+  
   margin-left: 3vh;
   margin-top: 3vh;
 }
@@ -56,12 +60,9 @@ body {
 .secao4 {
   display: flex;
   justify-content: center;
-  height: 100vh;
-}
-.skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 190vh;
+  border-radius: 4vh;
+  padding-top: 2vh;
 }
 .secao5 {
   display: flex;
@@ -144,6 +145,9 @@ body {
   font-size: 18px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 }
+#newbotao{
+  width: 5.5vh;
+}
 @keyframes arrow
 {
 0% {opacity:0}
@@ -173,4 +177,27 @@ body {
 .arrows path.a3 {	
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .11em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
